@@ -2,76 +2,21 @@
 
 <img src="https://raw.githubusercontent.com/thauanbo/thauanbo/refs/heads/main/img/banner-project.png" alt="Banner" width="100%">
 
-Um aplicativo Flutter completo para gerenciamento financeiro e criação de orçamentos profissionais, com autenticação Firebase e interface moderna inspirada no design system fornecido.
+Financy é um aplicativo de gestão financeira para profissionais e pequenas empresas. Permite criar e gerenciar orçamentos, acompanhar clientes, visualizar estatísticas de receitas, gerar PDFs profissionais e controlar status de aprovação. Oferece interface intuitiva, autenticação segura via Firebase e recursos completos para organizar seu fluxo financeiro de forma eficiente.
 
 ## ✨ Funcionalidades Implementadas
 
 ### 🔐 Autenticação Completa
 
-- ✅ **Login com Firebase**: Autenticação segura com email e senha
-- ✅ **Registro de usuários**: Cadastro com validação completa
-- ✅ **Recuperação de senha**: Fluxo completo forgot password → check email
-- ✅ **Armazenamento seguro**: Tokens protegidos com flutter_secure_storage
-- ✅ **Splash Screen**: Verificação automática de login
-
 ### 📱 Interface Moderna
-
-- ✅ **Design System consistente**: Cores, tipografia e componentes padronizados
-- ✅ **Bottom Navigation**: Navegação fluida entre 5 seções principais
-- ✅ **Gradientes e animações**: Interface visual atrativa
-- ✅ **Responsivo**: Funciona em web, mobile e desktop
 
 ### 📊 Dashboard Principal (HomePage)
 
-- ✅ **Saudação personalizada**: "Hello, Marcio Garcia"
-- ✅ **Resumo financeiro**: Total gastado com indicadores visuais
-- ✅ **Lista de orçamentos**: Histórico de orçamentos gerados
-- ✅ **Indicadores Open/Closed**: Status dos orçamentos
-- ✅ **Ações rápidas**: FAB para adicionar transações
-
 ### 📈 Estatísticas (Statistics)
-
-- ✅ **Gráficos interativos**: Visualização de dados por período
-- ✅ **Filtros temporais**: Dia, Semana, Mês, Ano
-- ✅ **Lista de orçamentos**: Histórico com valores e datas
-- ✅ **Indicadores de performance**: Crescimento e métricas
 
 ### 💼 Sistema de Orçamentos (WorkFlow)
 
-- ✅ **Criação em duas etapas**:
-  - **Cliente**: Nome, telefone, email, endereço
-  - **Orçamento**: Descrição, comentários, prazos, valores
-- ✅ **Interface com tabs**: Navegação intuitiva
-- ✅ **Validação de campos**: Feedback visual de erros
-- ✅ **Cálculo automático**: Total de materiais e mão de obra
-- ✅ **Compartilhamento**: WhatsApp, Email, PDF
-
 ### 👥 Gestão de Clientes
-
-- ✅ **Lista de clientes**: Visualização completa
-- ✅ **Perfil detalhado**: Informações do cliente
-- ✅ **Criação/edição**: Formulários completos
-- ✅ **Histórico**: Data de cadastro e informações
-
-### 👤 Perfil do Usuário
-
-- ✅ **Visualização**: Avatar e informações pessoais
-- ✅ **Edição inline**: Campos editáveis
-- ✅ **Gerenciamento de conta**: Opções de alteração
-- ✅ **Exclusão de conta**: Com confirmação de segurança
-
-### 🔗 Compartilhamento
-
-- ✅ **Múltiplas opções**: WhatsApp, Email, PDF
-- ✅ **Mensagens personalizáveis**: Texto adicional
-- ✅ **Interface dedicada**: Tela específica para compartilhamento
-
-### ⚠️ Tratamento de Erros
-
-- ✅ **Telas de erro personalizadas**: Feedback visual adequado
-- ✅ **Validações em tempo real**: Campos obrigatórios
-- ✅ **Mensagens informativas**: SnackBars e diálogos
-- ✅ **Recuperação de erros**: Opções para tentar novamente
 
 ## 🛠 Tecnologias Utilizadas
 
@@ -88,30 +33,30 @@ Um aplicativo Flutter completo para gerenciamento financeiro e criação de orç
 fabrica_de_software/
 ├── lib/
 │   ├── common/
-│   │   ├── constants/          # Cores, estilos, rotas
+│   │   ├── constants/          
 │   │   │   ├── app_colors.dart
 │   │   │   ├── app_text_styles.dart
 │   │   │   └── routes.dart
-│   │   └── models/             # Modelos de dados
+│   │   └── models/             
 │   ├── pages/
-│   │   ├── app.dart           # App principal com rotas
-│   │   ├── clients/           # Gestão de clientes
-│   │   ├── forgot_password/   # Recuperação de senha
-│   │   ├── home/              # Dashboard principal
-│   │   ├── onboarding/        # Apresentação
-│   │   ├── profile/           # Perfil do usuário
-│   │   ├── sign_in/           # Login
-│   │   ├── sign_up/           # Cadastro
-│   │   ├── statistics/        # Estatísticas e gráficos
-│   │   └── workflow/          # Criação de orçamentos
-│   ├── services/              # Serviços (Firebase, Storage)
-│   ├── splash/                # Tela inicial
-│   ├── themes/                # Tema padrão
-│   ├── widgets/               # Componentes reutilizáveis
-│   └── main.dart             # Ponto de entrada
-├── assets/                    # Recursos (imagens, fontes)
-├── test/                     # Testes unitários
-└── README.md                 # Esta documentação
+│   │   ├── app.dart           
+│   │   ├── clients/          
+│   │   ├── forgot_password/  
+│   │   ├── home/             
+│   │   ├── onboarding/       
+│   │   ├── profile/           
+│   │   ├── sign_in/           
+│   │   ├── sign_up/           
+│   │   ├── statistics/    
+│   │   └── workflow/         
+│   ├── services/            
+│   ├── splash/                
+│   ├── themes/               
+│   ├── widgets/              
+│   └── main.dart             
+├── assets/                  
+├── test/                     
+└── README.md                 
 
 ## 🚀 Como Executar o Projeto
 
@@ -121,12 +66,14 @@ fabrica_de_software/
 - VS Code ou Android Studio
 - Git
 
+````
 ### Passos para Instalação
 
 1. **Clone o repositório**
    ```bash
-   git clone https://github.com/thauanbo/fabrica_de_software.git
-   cd fabrica_de_software
+   git clone https://github.com/thauanbo/Financy.git
+   cd Financy
+````
 ````
 
 2. **Instale as dependências**
@@ -162,37 +109,6 @@ fabrica_de_software/
 - ✅ **macOS** (macOS 10.14+)
 - ✅ **Linux** (Ubuntu 16.04+)
 
-## 📱 Fluxo de Uso
-
-### 1. Primeira Execução
-
-- **Splash Screen** → Verifica login automático
-- **Onboarding** → Apresentação do app (se novo usuário)
-- **Sign Up/Sign In** → Autenticação
-
-### 2. Navegação Principal
-
-- **Home** → Dashboard com resumo financeiro
-- **Statistics** → Gráficos e relatórios
-- **Clients** → Lista e gestão de clientes
-- **WorkFlow** → Criação de orçamentos
-- **Profile** → Perfil do usuário
-
-### 3. Criação de Orçamento
-
-1. **Workflow** → Selecionar "Create"
-2. **Client Tab** → Preencher dados do cliente
-3. **Budget Tab** → Definir valores e descrição
-4. **Create** → Finalizar orçamento
-5. **Share** → Compartilhar via WhatsApp/Email/PDF
-
-### 4. Gestão de Clientes
-
-1. **Clients** → Visualizar lista
-2. **Profile** → Ver detalhes do cliente
-3. **Create Client** → Adicionar novo cliente
-4. **Edit** → Modificar informações
-
 ## 🧪 Testes
 
 ```bash
@@ -206,51 +122,11 @@ flutter analyze
 flutter test --coverage
 ```
 
-## 🎨 Design System
-
-### Cores Principais
-
-- **Primary Green**: #63B5AF
-- **Secondary Green**: #438883
-- **Dark Grey**: #444444
-- **Light Grey**: #666666
-- **White**: #FFFFFF
-
-### Tipografia
-
-- **Família**: Inter
-- **Tamanhos**: 14px (small), 16px (medium), 36px (large), 50px (big)
-- **Pesos**: Regular (400), Bold (700)
-
-### Componentes
-
-- **PrimaryButton**: Botão principal verde
-- **CustomTextFormField**: Campo de texto padronizado
-- **CustomCircularProgressIndicator**: Indicador de carregamento
-- **CustomBottomSheet**: Modal inferior
-
-## 🔐 Autenticação
-
-O app utiliza Firebase Auth com as seguintes funcionalidades:
-
-- **Registro**: Email + senha com validação
-- **Login**: Autenticação segura
-- **Forgot Password**: Recuperação por email
-- **Auto-login**: Verificação automática de sessão
-- **Logout**: Limpeza segura da sessão
-
-## 📊 Estado da Aplicação
-
-- **Controladores**: Padrão Controller + State para cada página
-- **Dependências**: GetIt para injeção
-- **Armazenamento**: Flutter Secure Storage para tokens
-- **Navegação**: Named routes centralizadas
 
 ## 🎯 Próximas Funcionalidades
 
 ### Planejadas para implementar
 
-- [ ] **Geração de PDF**: Orçamentos em formato PDF
 - [ ] **WhatsApp API**: Integração real com WhatsApp Business
 - [ ] **Notificações Push**: Firebase Cloud Messaging
 - [ ] **Backup na nuvem**: Sincronização de dados
@@ -263,7 +139,6 @@ O app utiliza Firebase Auth com as seguintes funcionalidades:
 
 ### Melhorias técnicas
 
-- [ ] **Testes de integração**: E2E testing
 - [ ] **CI/CD**: GitHub Actions
 - [ ] **Internacionalização**: Suporte multi-idiomas
 - [ ] **Acessibilidade**: Melhor suporte a screen readers
@@ -343,8 +218,6 @@ flutter packages pub run build_runner build
 
 ### 🚧 Em desenvolvimento
 
-- [ ] Implementação real da API Firebase
-- [ ] Geração de PDF
 - [ ] Integração WhatsApp
 - [ ] Testes unitários completos
 
@@ -352,49 +225,29 @@ flutter packages pub run build_runner build
 
 - Avisos de `withOpacity` deprecated (cosmético)
 - Algumas variáveis não utilizadas nos testes
-- Implementação mock da geração de PDF
-- WhatsApp integration é simulada
-
+- 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está sob a licença MIT.
 
 ## 👨‍💻 Autor
 
 **Thauan**
 
 - GitHub: [@thauanbo](https://github.com/thauanbo)
-- Email: thauanbarbosa121@hotmail.com.br
-
-## 🙏 Agradecimentos
-
-- Design inspirado nas melhores práticas de UX/UI
-- Comunidade Flutter pelo excelente framework
-- Firebase pela infraestrutura robusta
-- Todos os contribuidores do projeto
+- Email: hunterdevelop@outlook.com
 
 ## 📞 Suporte
 
 Para suporte, você pode:
 
-- Abrir uma [issue](https://github.com/thauanbo/fabrica_de_software/issues) no GitHub
+- Abrir uma [issue](https://github.com/thauanbo/financy/issues) no GitHub
 - Entrar em contato pelo email
-- Consultar a documentação do Flutter
 
 ---
 
 ⭐ **Se este projeto foi útil para você, considere dar uma estrela!** ⭐
 
----
-
-**Status do Projeto**: ✅ **Pronto para produção** com todas as telas implementadas conforme o design fornecido.
-│ ├── services/
-│ ├── themes/
-│ └── widgets/
-├── pubspec.yaml
-└── README.md
-
-````
 
 ## Stack utilizada
 
@@ -413,12 +266,12 @@ Para suporte, você pode:
 ## Clone o Projeto
 
 ```bash
-  git clone https://github.com/thauanbo/fabrica_de_software.git
+  git clone https://github.com/thauanbo/financy.git
 ````
 
-## Uso/Exemplos
+## Demonstração
 
-![Img-Exemplo](/assets/images/ScreenshotReadme.png)
+![Img-Exemplo](/assets/photos/7AC6FD37-E61B-46B3-AD65-8FF1C28834E3.JPG)
 
 Principais Componentes
 
